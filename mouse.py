@@ -1,3 +1,13 @@
+#Made by: Kouah Mohammed Aymen
+#Computer science student at "National Computer science Engineering School, Algiers (ESI)"
+#E-mail: jm_kouah@esi.dz
+#Github: https://github.com/aymenkouah
+#Requires installing "pygame" 
+#https:\\pygame.org
+#Open the read_me file for more info and the using method
+
+#To change the scale, change the "zoom" variable (decrease the number to zoom in)
+
 import pygame
 from math import floor
 import random
@@ -44,13 +54,14 @@ class grid():
 
 width = 1100
 height = 800
+zoom = 10
 
 pygame.init()
 pygame.display.set_caption('Crash!')
 window = pygame.display.set_mode((width, height))
 running = True
 i = 0
-back = grid(height, width, 10)
+back = grid(height, width, zoom)
 # Draw Once
 
 Rectplace = pygame.draw.rect(window, (0, 0, 0), (0, 0, width, height))
